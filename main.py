@@ -108,4 +108,4 @@ df = df.reindex(columns=colonnes_finales).fillna('')
 
 # Sauvegarder le fichier final
 df.to_excel("ProDon.xlsx", index=False)
-print("✅ Conversion terminée : fichier ProDon.xlsx généré.")
+print("Conversion terminée : fichier ProDon.xlsx généré.")
