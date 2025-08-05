@@ -72,7 +72,7 @@ departements_map = {
 }
 
 # Appliquer la correspondance vers une nouvelle colonne
-df['CliDépartements/Services'] = df['CliCodeDépartement'].map(departements_map).fillna('')
+df['CliDépartementService'] = df['CliCodeDépartement'].map(departements_map).fillna('')
 
 # Déterminer le pays selon la province
 df['CliPays'] = df.apply(
@@ -100,7 +100,7 @@ colonnes_finales = [
     'CliProvince',
     'CliCodePostal',
     'CliPays',
-    'CliDépartements/Services'
+    'CliDépartementService'
 ]
 
 # Réordonner les colonnes et remplacer les NaN par des chaînes vides
