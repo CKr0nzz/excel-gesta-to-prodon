@@ -36,7 +36,10 @@ df['CliAdresse'] = (
 # Corriger le nom du campus
 df['CliUQOCampus'] = df['CliUQOCampus'].replace({
     'GATIN': 'Gatineau',
-    'STJER': 'Saint-Jérôme'
+    'STJER': 'Saint-Jérôme',
+    'MANIW': 'Maniwaki',
+    'MTLAU': 'Mont-Laurier'
+    # Ripon
 })
 
 # Forcer le code secteur à 'DI'
