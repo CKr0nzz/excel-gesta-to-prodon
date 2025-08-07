@@ -21,7 +21,10 @@ df = df.rename(columns={
     'Mun': 'CliVille',
     'Prv': 'CliProvince',
     'CdPost': 'CliCodePostal',
-    'CdSect': 'CliCodeDépartement'
+    'CdSect': 'CliCodeDépartement',
+    'UQAC': 'UQAC',
+    'STTHE': 'Sainte-Thérèse'
+    
 })
 
 # Séparer NomComplet → CliNom + CliPrénom
