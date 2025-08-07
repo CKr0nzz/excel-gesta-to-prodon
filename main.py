@@ -22,8 +22,6 @@ df = df.rename(columns={
     'Prv': 'CliProvince',
     'CdPost': 'CliCodePostal',
     'CdSect': 'CliCodeDépartement',
-    'UQAC': 'UQAC',
-    'STTHE': 'Sainte-Thérèse',
     
 })
 
@@ -115,5 +113,5 @@ colonnes_finales = [
 df = df.reindex(columns=colonnes_finales).fillna('')
 
 # Sauvegarder le fichier final
-df.to_excel("ProDon.xlsx", index=False)
-print("Conversion terminée : fichier ProDon.xlsx généré.")
+df.to_csv("ProDon.csv", sep=';', index=False, encoding='utf-8-sig')
+print("Conversion terminée : fichier ProDon.csv généré.")
