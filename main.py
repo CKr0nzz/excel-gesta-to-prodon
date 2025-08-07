@@ -23,7 +23,7 @@ df = df.rename(columns={
     'CdPost': 'CliCodePostal',
     'CdSect': 'CliCodeDépartement',
     'UQAC': 'UQAC',
-    'STTHE': 'Sainte-Thérèse'
+    'STTHE': 'Sainte-Thérèse',
     
 })
 
@@ -41,7 +41,9 @@ df['CliUQOCampus'] = df['CliUQOCampus'].replace({
     'GATIN': 'Gatineau',
     'STJER': 'Saint-Jérôme',
     'MANIW': 'Maniwaki',
-    'MTLAU': 'Mont-Laurier'
+    'MTLAU': 'Mont-Laurier',
+    'STTHE': 'Sainte-Thérèse',
+    'UQAC': 'UQAC',
     # Ripon
 })
 
